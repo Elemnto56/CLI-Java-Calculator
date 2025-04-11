@@ -10,7 +10,6 @@ public class Main {
         System.out.println("Hello World");
         System.out.println(Cake.cakeMaker());
         System.out.println(myObj.cakeMaker());
-        Systebfjsdnfkjnfsdnfsdaj;nfaijdsa
     }
 }
 
