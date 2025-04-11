@@ -9,7 +9,7 @@ public class Main {
         Cake myObj = new Cake();
         System.out.println("Hello World");
         System.out.println(Cake.cakeMaker());
-        System.out.println(myObj.cakeMaker());
+        System.out.println("This changed");
     }
 }
 
