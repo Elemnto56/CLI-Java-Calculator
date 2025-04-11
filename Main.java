@@ -7,5 +7,7 @@ public class Main {
         int a = sc.nextInt();
 
         System.out.println(a);
+
+        sc.close();
     }
 }
