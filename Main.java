@@ -1,16 +1,11 @@
-class Cake {
-    public static String cakeMaker() {
-        return "Cake Made";
-    }
-}
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Cake myObj = new Cake();
-        System.out.println("Hello World");
-        System.out.println(Cake.cakeMaker());
-        System.out.println("This changed");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Type in a number");
+        int a = sc.nextInt();
+
+        System.out.println(a);
     }
 }
-
-// Comment
