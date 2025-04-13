@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
+    "git.autofetch": false,
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ]
