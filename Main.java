@@ -22,17 +22,24 @@ public class Main {
                 gotFirstNumber = true;
             } catch (Exception e) {
                 sc.nextLine(); // Open new line incase failed
-                System.out.println("Type a number");
+                System.out.println("Learn how to read retard, I said type in a number");
             }
         }
 
-        // Second number
-        try {
-            System.out.println("Give second number");
-            userTwo = sc.nextInt();
-        } catch (Exception e) {
-            
+        // Loop until bool true
+        while (!gotSecondNumber) {
+            // Catch for letter and not input
+            try {
+                // Second number
+                System.out.println("Give second number");
+                userTwo = sc.nextInt();
+                gotSecondNumber = true;
+            } catch (Exception e) {
+                sc.nextLine();
+                System.out.println("Learn how to input a number dipshit");
+            }
         }
+
         // Answer
         System.out.println(userOne + " + " + userTwo + " = " + (userOne + userTwo));
     }
