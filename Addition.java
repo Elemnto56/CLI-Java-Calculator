@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Addition {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Addition!");
@@ -42,7 +42,7 @@ public class Main {
 
         // Answer
         System.out.println(userOne + " + " + userTwo + " = " + (userOne + userTwo));
+
+        sc.close();
     }
 }
-
-// Done
