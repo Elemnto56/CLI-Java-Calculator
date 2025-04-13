@@ -1,4 +1,4 @@
-package Calculator.src;
+package calculator;
 import java.util.Scanner;
 
 public class Addition {
