@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Addition {
     public static void main(String[] args) {
+        Rudeness insult = new Rudeness();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Addition!");
         
@@ -23,7 +24,7 @@ public class Addition {
                 gotFirstNumber = true;
             } catch (Exception e) {
                 sc.nextLine(); // Open new line incase failed
-                System.out.println("Learn how to read retard, I said type in a number");
+                System.out.println(insult.RandomInsult());
             }
         }
 
@@ -37,7 +38,7 @@ public class Addition {
                 gotSecondNumber = true;
             } catch (Exception e) {
                 sc.nextLine();
-                System.out.println("Learn how to input a number dipshit");
+                System.out.println(insult.RandomInsult());
             }
         }
 
