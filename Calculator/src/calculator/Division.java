@@ -45,5 +45,7 @@ public class Division {
         } if (userInput.equalsIgnoreCase("y")) {
             System.out.println(userOne + " and " + userTwo + " remainder is " + (userOne % userTwo));
         }
+
+        sc.close();
     }
 }
