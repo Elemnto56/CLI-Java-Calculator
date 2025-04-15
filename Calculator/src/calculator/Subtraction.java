@@ -1,12 +1,13 @@
 package calculator;
 import java.util.Scanner;
 
-public class Division {
+public class Subtraction {
     public static void main(String[] args) {
         Rudeness insult = new Rudeness();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to division!");
 
+        System.out.println("Welcome to Subtraction!");
+        
         int userOne = 0;
         int userTwo = 0;
 
@@ -15,9 +16,9 @@ public class Division {
 
         while (!gotFirstNumber) {
             try {
-                System.out.println("Type in first number: ");
+                System.out.println("Type in first number [Note: This will be subtracted by the next]");
                 userOne = sc.nextInt();
-                gotFirstNumber= true;
+                gotFirstNumber = true;
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(insult.RandomInsult());
@@ -26,10 +27,9 @@ public class Division {
 
         while (!gotSecondNumber) {
             try {
-                System.out.println("Type second number: ");
+                System.out.println("Type in second number");
                 userTwo = sc.nextInt();
                 gotSecondNumber = true;
-                sc.nextLine();
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(insult.RandomInsult());
@@ -37,15 +37,7 @@ public class Division {
         }
 
         // Answer
-            System.out.println("Would you like to see the remainder? (y/n)");
-            String userInput;
-            userInput = sc.nextLine();
-
-        if (userInput.equalsIgnoreCase("n")) {
-            System.out.println(userOne + " / " + userTwo + " = " + (userOne/userTwo));
-        } if (userInput.equalsIgnoreCase("y")) {
-            System.out.println(userOne + " and " + userTwo + " remainder is " + (userOne % userTwo));
-        }
+        System.out.println(userOne + " - " + userTwo + " = " + (userOne - userTwo));
 
         sc.close();
     }
