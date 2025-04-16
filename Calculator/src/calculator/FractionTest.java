@@ -1,16 +1,22 @@
 package calculator;
 
+import java.util.Scanner;
 import org.apache.commons.math3.fraction.Fraction;
 
 public class FractionTest {
     public static void main(String[] args) {
-        // Create a fraction 5/8
-        Fraction f = new Fraction(5, 8);
+        Scanner sc = new Scanner(System.in);
 
-        // Output as a fraction string
-        System.out.println("Fraction: " + f); // ➤ 5/8
+        System.out.print("Enter a decimal (e.g. 0.625): ");
+        double decimal = sc.nextDouble();
 
-        // Output as a decimal (double)
+        // Convert to fraction
+        Fraction f = new Fraction(decimal, 1.0e-10); // 1.0e-10 = max error tolerance
+
+        // Output
+        System.out.println("Fraction: " + f);              // ➤ 5/8
         System.out.println("As double: " + f.doubleValue()); // ➤ 0.625
+
+        sc.close();
     }
 }
