@@ -5,6 +5,7 @@
     "java.project.outputPath": "bin",
     "git.autofetch": false,
     "java.project.referencedLibraries": [
-        "/workspaces/Code-Server/Calculator/lib/exp4j-0.4.8.jar"
+        "/home/pi/my-code-project/Calculator/lib/exp4j-0.4.8.jar",
+        "/home/pi/my-code-project/Calculator/lib/commons-math3-3.6.1.jar"
     ]
 }
