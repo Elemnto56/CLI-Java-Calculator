@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Compiling all Java files..."
+echo "Building project (no run)..."
 javac -cp "Calculator/lib/*" -d bin $(find Calculator/src -name "*.java")
-echo "Done."
+[ $? -eq 0 ] && echo "Build successful." || echo "Compilation failed."
