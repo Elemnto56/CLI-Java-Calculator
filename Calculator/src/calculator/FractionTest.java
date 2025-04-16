@@ -10,12 +10,11 @@ public class FractionTest {
         System.out.print("Enter a decimal (e.g. 0.625): ");
         double decimal = sc.nextDouble();
 
-        // Convert to fraction
-        Fraction f = new Fraction(decimal, 1.0e-10); // 1.0e-10 = max error tolerance
+        // Converts the decimal to a fraction with a max denominator of 10,000
+        Fraction f = new Fraction(decimal, 10000);
 
-        // Output
-        System.out.println("Fraction: " + f);              // ➤ 5/8
-        System.out.println("As double: " + f.doubleValue()); // ➤ 0.625
+        System.out.println("Fraction: " + f);
+        System.out.println("Your double: " + f.doubleValue());
 
         sc.close();
     }
