@@ -3,6 +3,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Addition",
+        "request": "launch",
+        "mainClass": "calculator.Addition",
+        "projectName": "my-code-project_53ee7bc5"
+      },
+      {
+        "type": "java",
         "name": "FractionTest",
         "request": "launch",
         "mainClass": "calculator.FractionTest",
