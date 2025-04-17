@@ -47,7 +47,7 @@ public class Multiplication {
 
         while (gotSecondNumber != true) {
             try {
-                System.out.println("Give second number");
+                System.out.println("Give second number"); 
                 secondNumber = sc.nextInt();
                 gotSecondNumber = true;
             } catch (Exception e) {
