@@ -1,5 +1,6 @@
 package calculator;
 import java.util.Scanner;
+import org.apache.commons.math3.fraction.Fraction;
 
 public class Division {
     public static void main(String[] args) {
@@ -39,12 +40,34 @@ public class Division {
         // Answer
             System.out.println("Would you like to see the remainder? (y/n)");
             String userInput;
+            double userOne2 = (double) userOne;
+            double answer = (double)(userOne2 / userTwo);
+            int maxDenominator = 10000;
             userInput = sc.nextLine();
 
+        /*
         if (userInput.equalsIgnoreCase("n")) {
             System.out.println(userOne + " / " + userTwo + " = " + (userOne/userTwo));
-        } if (userInput.equalsIgnoreCase("y")) {
+        } 
+        */
+        if (userInput.equalsIgnoreCase("y")) {
             System.out.println(userOne + " and " + userTwo + " remainder is " + (userOne % userTwo));
+        }
+        
+
+        // Fraction answer
+        System.out.println("Would you like your answer as a fraction? (frac/deci)");
+
+        // Making a frac
+        Fraction frac = new Fraction(userOne, userTwo);
+
+        String userInput2;
+        userInput2 = sc.nextLine();
+
+        if (userInput2.equalsIgnoreCase("frac")) {
+            System.out.println(frac);
+        } if (userInput2.equalsIgnoreCase("deci")) {
+            System.out.println(answer);
         }
 
         sc.close();

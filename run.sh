@@ -1,18 +1,15 @@
 #!/bin/bash
 
+# Path setup
 SRC_DIR="Calculator/src"
-BIN_DIR="bin"
-LIB_DIR="Calculator/lib/*"
+BIN_DIR="Calculator/bin"
+LIB_DIR="Calculator/lib"
 
-echo "Which class do you want to run? (e.g., calculator.Main)"
-read mainClass
+# Prompt for class name
+read -p "Enter the class name to run (e.g., Main): " CLASS_NAME
 
-echo "Compiling..."
-javac -cp "$LIB_DIR" -d "$BIN_DIR" $(find "$SRC_DIR" -name "*.java")
+# Compile everything
+find "$SRC_DIR" -name "*.java" | xargs javac -cp "$LIB_DIR/*" -d "$BIN_DIR"
 
-if [ $? -eq 0 ]; then
-    echo "Running $mainClass..."
-    java -cp "$BIN_DIR:$LIB_DIR" "$mainClass"
-else
-    echo "Compilation Error"
-fi
+# Run the specified class
+java -cp "$BIN_DIR:$LIB_DIR/*" "calculator.${CLASS_NAME}"

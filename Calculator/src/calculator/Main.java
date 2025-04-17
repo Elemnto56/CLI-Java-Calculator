@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hello! Welcome to Calculator! Type a number for an operation below: ");
-        System.out.println("1. Addition \n" + "2. Subtraction \n" + "3. Multiplication \n" + "4. Division");
+        System.out.println("1. Addition \n" + "2. Subtraction \n" + "3. Multiplication \n" + "4. Division \n" + "5. Scientific (powers, sqrt, log, and etc)");
         
         boolean validInput = false;
 
@@ -25,6 +25,9 @@ public class Main {
                         break;
                     case 4:
                         Division.main(args);
+                        break;
+                    case 5:
+                        Scientific.main(args);
                         break;
                     default:
                         System.out.println("Invalid input");
