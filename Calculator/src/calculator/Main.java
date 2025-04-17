@@ -1,5 +1,6 @@
 package calculator;
 import java.util.Scanner;
+import Four-Function.*;
 
 public class Main {
     public static void main(String[] args) {
