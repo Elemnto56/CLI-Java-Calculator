@@ -1,4 +1,4 @@
-package calculator;
+package calculator.Four_Function;
 import java.util.Scanner;
 
 public class Subtraction {

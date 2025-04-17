@@ -1,6 +1,7 @@
 package calculator;
 import java.util.Scanner;
 import org.apache.commons.math3.fraction.Fraction;
+import calculator.Four_Function.Multiplication;
 
 public class Scientific {
     static Scanner sc = new Scanner(System.in);
@@ -17,6 +18,7 @@ public class Scientific {
         double answer = Math.pow(baseNum, powerNum);
     
         System.out.println(answer);
+        System.out.println(insult.RandomInsult());
     }
 
     public static void sqrt() {
