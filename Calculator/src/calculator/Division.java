@@ -42,14 +42,8 @@ public class Division {
             String userInput;
             double userOne2 = (double) userOne;
             double answer = (double)(userOne2 / userTwo);
-            int maxDenominator = 10000;
             userInput = sc.nextLine();
 
-        /*
-        if (userInput.equalsIgnoreCase("n")) {
-            System.out.println(userOne + " / " + userTwo + " = " + (userOne/userTwo));
-        } 
-        */
         if (userInput.equalsIgnoreCase("y")) {
             System.out.println(userOne + " and " + userTwo + " remainder is " + (userOne % userTwo));
         }

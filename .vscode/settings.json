@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Calculator/src"
+    ],
+    "java.project.referencedLibraries": [
+        "Calculator/lib/exp4j-0.4.8.jar",
+        "Calculator/lib/commons-math3-3.6.1.jar"
+    ]
+}
