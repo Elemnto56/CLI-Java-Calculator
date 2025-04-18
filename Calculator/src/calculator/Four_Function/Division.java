@@ -1,6 +1,7 @@
 package calculator.Four_Function;
 import java.util.Scanner;
 import org.apache.commons.math3.fraction.Fraction;
+import calculator.misc.Rudeness;
 
 public class Division {
     public static void main(String[] args) {

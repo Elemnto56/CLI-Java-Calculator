@@ -1,7 +1,7 @@
 package calculator;
 import java.util.Scanner;
 import org.apache.commons.math3.fraction.Fraction;
-import calculator.Four_Function.Multiplication;
+import calculator.misc.Rudeness;
 
 public class Scientific {
     static Scanner sc = new Scanner(System.in);
