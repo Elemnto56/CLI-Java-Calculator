@@ -1,5 +1,7 @@
 package calculator.Four_Function;
 import java.util.Scanner;
+
+import calculator.Main;
 import calculator.misc.Rudeness;
 
 public class Subtraction {
@@ -39,6 +41,17 @@ public class Subtraction {
 
         // Answer
         System.out.println(userOne + " - " + userTwo + " = " + (userOne - userTwo));
+
+        sc.nextLine();
+        
+        System.out.print("Return to Menu? (y/n)>");
+        String userMenu = sc.nextLine();
+
+        if (userMenu.equalsIgnoreCase("y")) {
+            Main.main(args);
+        } if (userMenu.equalsIgnoreCase("n")) {
+            System.out.println("Goodbye!");
+        }
 
         sc.close();
     }

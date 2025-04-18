@@ -1,6 +1,8 @@
 package calculator.Four_Function;
 import java.util.Scanner;
 import org.apache.commons.math3.fraction.Fraction;
+
+import calculator.Main;
 import calculator.misc.Rudeness;
 
 public class Division {
@@ -63,6 +65,15 @@ public class Division {
             System.out.println(frac);
         } if (userInput2.equalsIgnoreCase("deci")) {
             System.out.println(answer);
+        }
+        
+        System.out.print("Return to Menu? (y/n)>");
+        String userMenu = sc.nextLine();
+
+        if (userMenu.equalsIgnoreCase("y")) {
+            Main.main(args);
+        } if (userMenu.equalsIgnoreCase("n")) {
+            System.out.println("Goodbye!");
         }
 
         sc.close();

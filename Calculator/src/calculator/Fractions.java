@@ -8,6 +8,7 @@ public class Fractions {
     static Scanner sc = new Scanner(System.in);
 
     public static void Fracmaker() {
+        // Reminder: 
         System.out.println("Type out first Fraction (ex: 3/2): ");
         String userFrac = sc.nextLine();
         
