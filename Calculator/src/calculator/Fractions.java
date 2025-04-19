@@ -7,9 +7,8 @@ import java.util.Scanner;
 public class Fractions {
     static Scanner sc = new Scanner(System.in);
 
-    public static void Fracmaker() {
-        // Reminder: 
-        System.out.println("Type out first Fraction (ex: 3/2): ");
+    public static void FracAddition() {
+        System.out.print("Type out first Fraction (ex: 3/2): ");
         String userFrac = sc.nextLine();
         
         String[] fracStrings = userFrac.trim().split("/");
@@ -18,10 +17,21 @@ public class Fractions {
         BigInteger denominator = new BigInteger(fracStrings[1].trim());
 
         BigFraction frac = new BigFraction(numerator, denominator);
-        System.out.println("Your fraction is: " + frac);
+        
+        System.out.print("Type out second Fraction (ex: 4/5): ");
+        String userFracTwo = sc.nextLine();
+
+        String[] fracStringstwo = userFracTwo.trim().split("/");
+
+        BigInteger numeratortwo = new BigInteger(fracStringstwo[0].trim());
+        BigInteger denominatortwo = new BigInteger(fracStringstwo[1].trim());
+
+        BigFraction frac2 = new BigFraction(numeratortwo, denominatortwo);
+
+        System.out.println("Answer: " + frac.add(frac2));
     }
 
     public static void main(String[] args) {
-        Fracmaker();
+        
     }
 }

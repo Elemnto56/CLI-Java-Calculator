@@ -1,5 +1,8 @@
 package calculator.Four_Function;
+import calculator.misc.Errors.NotANumberException;
 import java.util.Scanner;
+
+import calculator.misc.Errors;
 import calculator.misc.Rudeness;
 import calculator.*;
 
@@ -8,6 +11,17 @@ public class Addition {
         Rudeness insult = new Rudeness();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Addition!");
+
+        // Fraction check
+        System.out.println("Would you like add fractions? (y/n)");
+        String userFrac = sc.nextLine();
+
+        if (userFrac.equalsIgnoreCase("y")) {
+            Fractions.FracAddition();
+            System.exit(0);
+        } if (userFrac.equalsIgnoreCase("n")) {
+            System.out.println("Continuing on with standard additon...");
+        }
         
         int userOne = 0;
         int userTwo = 0;
@@ -24,9 +38,10 @@ public class Addition {
                 System.out.println("Give first number");
                 userOne = sc.nextInt();
                 gotFirstNumber = true;
-            } catch (Exception e) {
+                throw new Errors.NotANumberException(); 
+            } catch (Errors.NotANumberException e) {
+                System.out.println(e.getMessage());
                 sc.nextLine(); // Open new line incase failed
-                System.out.println(insult.RandomInsult());
             }
         }
 
