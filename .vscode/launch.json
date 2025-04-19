@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      
+      {
+        "type": "java",
+        "name": "Launch Calculator App",
+        "request": "launch",
+        "mainClass": "calculator.Main",
+        "projectName": "Calculator",
+        "vmArgs": "-cp bin:lib/*"
+      }
+    ]
+  }
+  
