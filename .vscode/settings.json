@@ -2,6 +2,7 @@
     "java.project.sourcePaths": [
         "Calculator/src"
     ],
+    "java.project.outputPath": "bin.calculator",
     "java.project.referencedLibraries": [
         "/workspaces/Code-Server/Calculator/lib/exp4j-0.4.8.jar",
         "/workspaces/Code-Server/Calculator/lib/commons-lang3-3.17.0.jar",
