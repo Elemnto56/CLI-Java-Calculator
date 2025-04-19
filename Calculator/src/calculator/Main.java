@@ -1,5 +1,7 @@
 package calculator;
 import java.util.Scanner;
+
+import calculator.Core_Logic.Scientific;
 import calculator.Four_Function.*;
 
 public class Main {

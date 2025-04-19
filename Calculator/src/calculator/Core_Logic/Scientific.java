@@ -1,4 +1,4 @@
-package calculator;
+package calculator.Core_Logic;
 import java.util.Scanner;
 import org.apache.commons.math3.fraction.Fraction;
 import calculator.misc.Rudeness;

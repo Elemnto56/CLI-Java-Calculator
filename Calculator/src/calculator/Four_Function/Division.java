@@ -13,27 +13,24 @@ public class Division {
 
         int userOne = 0;
         int userTwo = 0;
-
-        boolean gotFirstNumber = false;
-        boolean gotSecondNumber = false;
-
-        while (!gotFirstNumber) {
+        
+        while (true) {
             try {
                 System.out.println("Type in first number: ");
                 userOne = sc.nextInt();
-                gotFirstNumber= true;
+                break;
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(insult.RandomInsult());
             }
         }
 
-        while (!gotSecondNumber) {
+        while (true) {
             try {
                 System.out.println("Type second number: ");
                 userTwo = sc.nextInt();
-                gotSecondNumber = true;
                 sc.nextLine();
+                break;
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(insult.RandomInsult());

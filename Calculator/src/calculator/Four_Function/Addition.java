@@ -1,9 +1,8 @@
 package calculator.Four_Function;
 import java.util.Scanner;
-
-import calculator.misc.Errors;
-import calculator.misc.Rudeness;
 import calculator.*;
+import calculator.Core_Logic.Fractions;
+import calculator.misc.Rudeness;
 
 public class Addition {
     public static void main(String[] args) {
@@ -25,33 +24,26 @@ public class Addition {
         int userOne = 0;
         int userTwo = 0;
 
-        // Bool for user inputs if it's truly an int
-        boolean gotFirstNumber = false;
-        boolean gotSecondNumber = false;
-
         // Loop until bool is true
-        while (!gotFirstNumber) {
+        while (true) {
             // Exception
             try {
-                // First number
                 System.out.println("Give first number");
                 userOne = sc.nextInt();
-                gotFirstNumber = true;
-                throw new Errors.NotANumberException(); 
-            } catch (Errors.NotANumberException e) {
-                System.out.println(e.getMessage());
-                sc.nextLine(); // Open new line incase failed
-            }
+                break;
+            } catch (Exception e) {
+                sc.nextLine();
+
+           }
         }
 
-        // Loop until bool true
-        while (!gotSecondNumber) {
+     while (true) {
             // Catch for letter and not input
             try {
                 // Second number
                 System.out.println("Give second number");
                 userTwo = sc.nextInt();
-                gotSecondNumber = true;
+                break;
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(insult.RandomInsult());

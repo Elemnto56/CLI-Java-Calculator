@@ -1,4 +1,4 @@
-package calculator;
+package calculator.Core_Logic;
 import org.apache.commons.math3.fraction.BigFraction;
 
 import java.math.BigInteger;
@@ -29,6 +29,10 @@ public class Fractions {
         BigFraction frac2 = new BigFraction(numeratortwo, denominatortwo);
 
         System.out.println("Answer: " + frac.add(frac2));
+    }
+
+    public static void FracSubtration() {
+        
     }
 
     public static void main(String[] args) {
