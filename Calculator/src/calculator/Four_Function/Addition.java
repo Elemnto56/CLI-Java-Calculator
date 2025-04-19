@@ -1,5 +1,4 @@
 package calculator.Four_Function;
-import calculator.misc.Errors.NotANumberException;
 import java.util.Scanner;
 
 import calculator.misc.Errors;
