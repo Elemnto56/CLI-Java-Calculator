@@ -18,7 +18,13 @@ public class Subtraction {
         System.out.println("Would you like to subtract fractions? (y/n)");
         String userFrac = sc.nextLine();
         if (userFrac.equalsIgnoreCase("y")) {
-            Fractions.FirstFraction();
+            var fraction = Fractions.Fraction(sc);
+            var fraction2 = Fractions.Fraction(sc);
+
+            System.out.println(fraction.subtract(fraction2));
+            System.exit(0);
+        } if (userFrac.equalsIgnoreCase("n")) {
+            System.out.println("Continuing on with standard subtraction");
         }
 
         while (true) {

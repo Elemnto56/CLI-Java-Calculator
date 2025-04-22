@@ -5,10 +5,9 @@ import org.apache.commons.math3.fraction.BigFraction;
 import java.math.BigInteger;
 import java.util.Scanner;
 
+@SuppressWarnings("unused")
 public class Fractions {
-    static Scanner sc = new Scanner(System.in);
-
-    public static BigFraction FirstFraction() {
+    public static BigFraction Fraction(Scanner sc) {
         System.out.println("Type in your fraction (ex: 5/2): ");
         String userFrac = sc.nextLine();
 
@@ -37,13 +36,8 @@ public class Fractions {
         return frac;
     }
     */
-
-    public static Fraction SecondFraction(int a, int b) {
-        Fraction frac = Fraction.getFraction(a, b);
-        return frac;
-    }
-
     public static void FracAddition() {
+        Scanner sc = new Scanner(System.in);
         System.out.print("Type out first Fraction (ex: 3/2): ");
         String userFrac = sc.nextLine();
         
@@ -65,6 +59,8 @@ public class Fractions {
         BigFraction frac2 = new BigFraction(numeratortwo, denominatortwo);
 
         System.out.println("Answer: " + frac.add(frac2));
+
+        sc.close();
     }
     public static void main(String[] args) {
         
