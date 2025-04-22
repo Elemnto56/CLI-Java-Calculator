@@ -21,23 +21,12 @@ public class Main {
                 int userInput = sc.nextInt();
                 validInput = true;
                 switch (userInput) {
-                    case 1:
-                        Addition.main(args);
-                        break;
-                    case 2:
-                        Subtraction.main(args);
-                        break;
-                    case 3:
-                        Multiplication.main(args);
-                        break;
-                    case 4:
-                        Division.main(args);
-                        break;
-                    case 5:
-                        Scientific.main(args);
-                        break;
-                    default:
-                        System.out.println("Invalid input");
+                    case 1 -> Addition.main(args);
+                    case 2 -> Subtraction.main(args);
+                    case 3 -> Multiplication.main(args);
+                    case 4 -> Division.main(args);
+                    case 5 -> Scientific.main(args);
+                    default -> System.out.println("Invalid input");
                 }
 
             } catch (Exception e) {

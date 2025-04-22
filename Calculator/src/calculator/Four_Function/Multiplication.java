@@ -13,25 +13,22 @@ public class Multiplication {
         int firstNumber = 0;
         int secondNumber = 0;
 
-        boolean gotFirstNumber = false;
-        boolean gotSecondNumber = false;
-
-        while (gotFirstNumber != true) {
+        while (true) {
             try {
                 System.out.println("Give first number");
                 firstNumber = sc.nextInt();
-                gotFirstNumber = true;
+                break;
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(rude.RandomInsult());
             }
         }
 
-        while (gotSecondNumber != true) {
+        while (true) {
             try {
                 System.out.println("Give second number"); 
                 secondNumber = sc.nextInt();
-                gotSecondNumber = true;
+                break;
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(rude.RandomInsult());

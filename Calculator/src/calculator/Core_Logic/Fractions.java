@@ -1,4 +1,5 @@
 package calculator.Core_Logic;
+import org.apache.commons.lang3.math.Fraction;
 import org.apache.commons.math3.fraction.BigFraction;
 
 import java.math.BigInteger;
@@ -6,6 +7,41 @@ import java.util.Scanner;
 
 public class Fractions {
     static Scanner sc = new Scanner(System.in);
+
+    public static BigFraction FirstFraction() {
+        System.out.println("Type in your fraction (ex: 5/2): ");
+        String userFrac = sc.nextLine();
+
+        String[] fracStrings = userFrac.trim().split("/");
+
+        BigInteger numerator = new BigInteger(fracStrings[0].trim());
+        BigInteger denominator = new BigInteger(fracStrings[1].trim());
+
+        BigFraction frac = new BigFraction(numerator, denominator);
+
+        return frac;
+    }
+
+    /* 
+    public static BigFraction SecondFraction() {
+        System.out.println("Type in your fraction (10/4): ");
+        String userFrac = sc.nextLine();
+        
+        String[] fracStrings = userFrac.trim().split("/");
+
+        BigInteger numerator = new BigInteger(fracStrings[0].trim());
+        BigInteger denominator = new BigInteger(fracStrings[1].trim());
+
+        BigFraction frac = new BigFraction(numerator, denominator);
+
+        return frac;
+    }
+    */
+
+    public static Fraction SecondFraction(int a, int b) {
+        Fraction frac = Fraction.getFraction(a, b);
+        return frac;
+    }
 
     public static void FracAddition() {
         System.out.print("Type out first Fraction (ex: 3/2): ");
@@ -30,11 +66,6 @@ public class Fractions {
 
         System.out.println("Answer: " + frac.add(frac2));
     }
-
-    public static void FracSubtration() {
-        
-    }
-
     public static void main(String[] args) {
         
     }

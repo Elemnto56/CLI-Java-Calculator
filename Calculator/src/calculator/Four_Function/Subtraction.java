@@ -1,6 +1,7 @@
 package calculator.Four_Function;
 import java.util.Scanner;
 
+import calculator.Core_Logic.Fractions;
 import calculator.Main;
 import calculator.misc.Rudeness;
 
@@ -14,25 +15,28 @@ public class Subtraction {
         int userOne = 0;
         int userTwo = 0;
 
-        boolean gotFirstNumber = false;
-        boolean gotSecondNumber = false;
+        System.out.println("Would you like to subtract fractions? (y/n)");
+        String userFrac = sc.nextLine();
+        if (userFrac.equalsIgnoreCase("y")) {
+            Fractions.FirstFraction();
+        }
 
-        while (!gotFirstNumber) {
+        while (true) {
             try {
                 System.out.println("Type in first number [Note: This will be subtracted by the next]");
                 userOne = sc.nextInt();
-                gotFirstNumber = true;
+                break;
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(insult.RandomInsult());
             }
         }
 
-        while (!gotSecondNumber) {
+        while (true) {
             try {
                 System.out.println("Type in second number");
                 userTwo = sc.nextInt();
-                gotSecondNumber = true;
+                break;
             } catch (Exception e) {
                 sc.nextLine();
                 System.out.println(insult.RandomInsult());
@@ -42,6 +46,7 @@ public class Subtraction {
         // Answer
         System.out.println(userOne + " - " + userTwo + " = " + (userOne - userTwo));
 
+        sc.nextLine();
         sc.nextLine();
         
         System.out.print("Return to Menu? (y/n)>");
