@@ -30,6 +30,7 @@ public class Main {
                     case 3 -> Multiplication.main(args);
                     case 4 -> Division.main(args);
                     case 5 -> Main.AdvancedSubMenu(args);
+                    case 6 -> 
                     case 7 -> System.exit(0);
                     default -> System.out.println("Invalid input");
                 }
