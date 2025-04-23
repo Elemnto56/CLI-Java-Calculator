@@ -4,6 +4,11 @@ import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
 public class Graph {
+    static String expr;
+    public static void main(String[] args) {
+        System.out.println("Input expression: ");
+        
+    }
 
     public static void generateGraph(String expr) {
         int width = 80;

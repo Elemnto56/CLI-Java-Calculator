@@ -1,10 +1,11 @@
 package calculator;
 import java.util.Scanner;
-import calculator.Core_Logic.Scientific;
+import calculator.Core_Logic.*;
 import calculator.Four_Function.*;
 import calculator.misc.Errors.FatalMainException;
 
 public class Main {
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws FatalMainException {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hello! Welcome to Calculator! Type a number for an operation below: ");
