@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Dev_Room {
     public static void main(String[] args) {
-        FileReader fr = new File
+        FileReader fr = new FileReader(null)
         Scanner sc = new Scanner(System.in);
         System.out.println("""
                 Welcome to the Dev Room! Or, as the dev class it: "The Distillery"!
