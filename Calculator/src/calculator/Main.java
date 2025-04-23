@@ -40,4 +40,8 @@ public class Main {
         }
             sc.close();
     }
+
+    public static void AdvancedSubMenu(String[] args) {
+        Scanner sc = new Scanner(System.in);
+    }
 }
