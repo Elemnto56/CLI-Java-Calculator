@@ -3,9 +3,9 @@ import java.util.Scanner;
 import calculator.Core_Logic.*;
 import calculator.Four_Function.*;
 import calculator.misc.Errors.FatalMainException;
+import calculator.misc.Errors.NotANumberException;
 
 public class Main {
-    @SuppressWarnings("resource")
     public static void main(String[] args) throws FatalMainException {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hello! Welcome to Calculator! Type a number for an operation below: ");
@@ -14,7 +14,7 @@ public class Main {
                 2. Subtraction
                 3. Multiplication
                 4. Division
-                5. Scientifc [BETA!] (powers, sqrt, log, etc)
+                5. Advanced Mathematics [Gra]
                 7. Quit
                 """);
         
@@ -43,7 +43,8 @@ public class Main {
             sc.close();
     }
 
-    public static void AdvancedSubMenu(String[] args) {
+    @SuppressWarnings("resource")
+    public static void AdvancedSubMenu(String[] args) throws NotANumberException {
         Scanner sc = new Scanner(System.in);
         System.out.println("Sub-menu of Advanced Mathematics");
         System.out.println("""
@@ -57,6 +58,10 @@ public class Main {
                         case 1 -> Scientific.main(args);
                         case 2 -> Graph.main(args);
                     }
+                } catch (Exception e) {
+                    throw new NotANumberException();                   
                 }
+
+        sc.close();
     }
 }

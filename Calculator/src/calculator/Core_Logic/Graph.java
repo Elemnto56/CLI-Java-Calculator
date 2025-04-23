@@ -2,12 +2,14 @@ package calculator.Core_Logic;
 
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
+import java.util.Scanner;
 
 public class Graph {
     static String expr;
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Input expression: ");
-        
+        expr = sc.nextLine();
     }
 
     public static void generateGraph(String expr) {
