@@ -3,9 +3,12 @@ package calculator.misc;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Dev_Room {
     public static void main(String[] args) {
+        FileReader fr = new File
+        Scanner sc = new Scanner(System.in);
         System.out.println("""
                 Welcome to the Dev Room! Or, as the dev class it: "The Distillery"!
                 Pick a file to view:
@@ -15,14 +18,9 @@ public class Dev_Room {
                 [4] Division.java
                 """);
 
-        us
-        switch () {
-            case value:
-                
-                break;
-        
-            default:
-                break;
+        int userInput = sc.nextInt();
+        switch (userInput) {
+            case 1 -> printFile("calculator/Four_Function/Addition.java");
         }
     }
     /* 
