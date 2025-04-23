@@ -35,7 +35,8 @@ public class Main {
 
             } catch (Exception e) {
                 sc.nextLine();
-                System.out.println("Input a number, not a letter or whatever that was");      
+                throw new FatalMainException("A fatal error with the current file occured.");
+                // System.out.println("Input a number, not a letter or whatever that was");      
             }
         }
             sc.close();
@@ -43,5 +44,18 @@ public class Main {
 
     public static void AdvancedSubMenu(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Sub-menu of Advanced Mathematics");
+        System.out.println("""
+                1. Scientifc [BETA!] (powers, sqrt, log, etc)
+                2. Graphing Calculator [Errors can occur]
+                """);
+
+                try {
+                    int userInput = sc.nextInt();
+                    switch (userInput) {
+                        case 1 -> Scientific.main(args);
+                        case 2 -> Graph.main(args);
+                    }
+                }
     }
 }
