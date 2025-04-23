@@ -5,15 +5,17 @@ import org.apache.commons.math3.fraction.Fraction;
 import calculator.Main;
 import calculator.Core_Logic.Fractions;
 import calculator.misc.Rudeness;
+import calculator.misc.Errors.FatalMainException;
+import calculator.misc.*;;
 
 public class Division {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FatalMainException {
         Rudeness insult = new Rudeness();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to division!");
 
         // Fraction check
-        System.out.println("Would you like add fractions? (y/n)");
+        System.out.println("Would you like divide fractions? (y/n)");
         String userFrac = sc.nextLine();
 
         if (userFrac.equalsIgnoreCase("y")) {

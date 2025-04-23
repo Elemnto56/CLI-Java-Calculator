@@ -4,9 +4,10 @@ import calculator.*;
 import calculator.Core_Logic.Fractions;
 import calculator.misc.Errors;
 import calculator.misc.Rudeness;
+import calculator.misc.Errors.FatalMainException;
 
 public class Addition {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FatalMainException {
         Rudeness insult = new Rudeness();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Addition!");

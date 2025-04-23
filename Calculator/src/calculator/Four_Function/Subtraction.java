@@ -4,9 +4,10 @@ import java.util.Scanner;
 import calculator.Core_Logic.Fractions;
 import calculator.Main;
 import calculator.misc.Rudeness;
+import calculator.misc.Errors.FatalMainException;
 
 public class Subtraction {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FatalMainException {
         Rudeness insult = new Rudeness();
         Scanner sc = new Scanner(System.in);
 

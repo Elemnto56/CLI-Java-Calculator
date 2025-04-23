@@ -3,9 +3,10 @@ import java.util.Scanner;
 
 import calculator.Main;
 import calculator.misc.Rudeness;
+import calculator.misc.Errors.FatalMainException;
 
 public class Multiplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FatalMainException {
         Rudeness rude = new Rudeness();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to multiplication!");
