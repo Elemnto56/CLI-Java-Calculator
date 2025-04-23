@@ -22,8 +22,17 @@ public class Subtraction {
             var fraction = Fractions.Fraction(sc);
             var fraction2 = Fractions.Fraction(sc);
 
-            System.out.println(fraction.subtract(fraction2));
-            System.exit(0);
+            System.out.println("Answer: " + fraction.subtract(fraction2)); 
+
+            System.out.print("Return to Menu? (y/n)>");
+        String userMenu = sc.nextLine();
+
+        if (userMenu.equalsIgnoreCase("y")) {
+            Main.main(args);
+        } if (userMenu.equalsIgnoreCase("n")) {
+            System.out.println("Goodbye!");
+        }
+
         } if (userFrac.equalsIgnoreCase("n")) {
             System.out.println("Continuing on with standard subtraction");
         }
