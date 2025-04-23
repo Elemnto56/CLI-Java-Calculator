@@ -20,7 +20,7 @@ Open a terminal and run:
 
 ```bash
 java -version
-
+```
 If it's Java 17 or higher, you're good. If not, install one from https://adoptium.net.
 
 2. Download the Calculator
@@ -29,8 +29,9 @@ Download the file named Calculator.jar.
 
 3. Run the Calculator
 In your terminal, navigate to where the .jar file is and run:
-
+```bash
 java -jar Calculator.jar
+```
 The calculator will launch in your terminal. Just type a number to select a menu option.
 
 The Distillery
