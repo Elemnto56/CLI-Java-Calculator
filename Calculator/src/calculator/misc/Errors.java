@@ -37,5 +37,10 @@ public class Errors {
         }
     }
 
-    //T
+    // Thrown when a file related to Main.java gets unresolved
+    public static class FatalMainException extends Exception {
+        public FatalMainException(String message) {
+            super("A file related to main encountered the following: " + message);
+        }
+    }
 }
