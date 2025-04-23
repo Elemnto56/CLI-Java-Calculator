@@ -5,6 +5,10 @@ SRC_DIR="Calculator/src"
 BIN_DIR="Calculator/bin"
 LIB_DIR="Calculator/lib"
 
+# Clean old .class files
+echo "Cleaning rogue .class files"
+find . -name "*.class" ! -path "./bin/*" -delete
+
 # Prompt for class name
 read -p "Enter the class name to run (e.g., Main): " CLASS_NAME
 
