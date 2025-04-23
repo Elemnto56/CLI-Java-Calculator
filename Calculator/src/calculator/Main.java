@@ -52,6 +52,7 @@ public class Main {
         System.out.println("""
                 1. Scientifc [BETA!] (powers, sqrt, log, etc)
                 2. Graphing Calculator [Errors can occur]
+                3. Return to Main Menu
                 """);
 
                 try {
@@ -59,6 +60,7 @@ public class Main {
                     switch (userInput) {
                         case 1 -> Scientific.main(args);
                         case 2 -> Graph.main(args);
+                        case 3 -> Main.main(args);
                     }
                 } catch (Exception e) {
                     throw new NotANumberException();                   
