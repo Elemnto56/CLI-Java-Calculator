@@ -5,7 +5,7 @@ import calculator.Four_Function.*;
 import calculator.misc.Errors;
 
 public class Main {
-    public static void main(String[] args) throws Errors.FatalMainException{
+    public static void main(String[] args) throws Errors.FatalMainException {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hello! Welcome to Calculator! Type a number for an operation below: ");
         System.out.println("""
