@@ -23,18 +23,18 @@ java -version
 ```
 If it's Java 17 or higher, you're good. If not, install one from https://adoptium.net.
 
-2. Download the Calculator
+## 2. Download the Calculator
 Head to the Releases page
 Download the file named Calculator.jar.
 
-3. Run the Calculator
+## 3. Run the Calculator
 In your terminal, navigate to where the .jar file is and run:
 ```bash
 java -jar Calculator.jar
 ```
 The calculator will launch in your terminal. Just type a number to select a menu option.
 
-The Distillery
+## The Distillery
 
 Option 6 in the main menu opens up a list of .java files you can read inside the program. It shows how the calculator works under the hood — like a walkthrough of the source code.
 
