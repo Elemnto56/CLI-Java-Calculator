@@ -17,11 +17,20 @@ public class Division {
         String userFrac = sc.nextLine();
 
         if (userFrac.equalsIgnoreCase("y")) {
-            Fractions.Fraction(sc);
-            Fractions.Fraction(sc);
+            var frac = Fractions.Fraction(sc);
+            var frac2 = Fractions.Fraction(sc);
 
-            
-            System.exit(0);
+            System.out.println("Answer: " + frac.divide(frac2));
+
+            System.out.print("Return to Menu? (y/n)>");
+            String userMenu = sc.nextLine();
+
+        if (userMenu.equalsIgnoreCase("y")) {
+            Main.main(args);
+        } if (userMenu.equalsIgnoreCase("n")) {
+            System.out.println("Goodbye!");
+        }
+            //System.exit(0);
         } if (userFrac.equalsIgnoreCase("n")) {
             System.out.println("Continuing on with standard divison...");
         }
