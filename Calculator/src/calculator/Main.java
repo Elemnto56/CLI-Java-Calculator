@@ -2,6 +2,7 @@ package calculator;
 import java.util.Scanner;
 import calculator.Core_Logic.Scientific;
 import calculator.Four_Function.*;
+import calculator.misc.Errors;
 import calculator.misc.Errors.*;
 
 public class Main {
@@ -35,7 +36,7 @@ public class Main {
 
             } catch (Exception e) {
                 sc.nextLine();
-                FatalMainException error = new FatalMainException();
+                throw Errors.FatalMainException("The current file could not operate as supposed to");
                 // System.out.println("Input a number, not a letter or whatever that was");      
             }
         }
