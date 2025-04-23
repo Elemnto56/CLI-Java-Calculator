@@ -29,8 +29,8 @@ public class Multiplication {
             Main.main(args);
         } if (userMenu.equalsIgnoreCase("n")) {
             System.out.println("Goodbye!");
+            System.exit(0);
         }
-            //System.exit(0);
         } if (userFrac.equalsIgnoreCase("n")) {
             System.out.println("Continuing on with standard multiplication...");
         }

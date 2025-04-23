@@ -31,6 +31,7 @@ public class Subtraction {
             Main.main(args);
         } if (userMenu.equalsIgnoreCase("n")) {
             System.out.println("Goodbye!");
+            System.exit(0);
         }
 
         } if (userFrac.equalsIgnoreCase("n")) {
