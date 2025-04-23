@@ -5,8 +5,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+import calculator.Main;
+import calculator.misc.Errors.FatalMainException;
+
 public class Dev_Room {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FatalMainException {
         Scanner sc = new Scanner(System.in);
         System.out.println("""
                 Welcome to the Dev Room! Or, as the dev calls it: "The Distillery"!
@@ -15,14 +18,16 @@ public class Dev_Room {
                 [2] Subtraction.java
                 [3] Multiplication.java
                 [4] Division.java
+                [5] Return to Main Menu
                 """);
 
         int userInput = sc.nextInt();
         switch (userInput) {
             case 1 -> printFile("/home/pi/my-code-project/Calculator/src/calculator/Four_Function/Addition.java");
-            case 2 -> printFile("calculator/Four_Function/Subtraction.java");
-            case 3 -> printFile("calculator/Four_Function/Multiplication.java");
-            case 4 -> printFile("calculator/Four_Function/Division.java");
+            case 2 -> printFile("/home/pi/my-code-project/Calculator/src/calculator/Four_Function/Subtraction.java");
+            case 3 -> printFile("/home/pi/my-code-project/Calculator/src/calculator/Four_Function/Multiplication.java");
+            case 4 -> printFile("/home/pi/my-code-project/Calculator/src/calculator/Four_Function/Division.java");
+            case 5 -> Main.main(args);
             default -> System.out.println("An error occured");
         }
     }
