@@ -2,6 +2,7 @@ package calculator.Four_Function;
 import java.util.Scanner;
 import calculator.*;
 import calculator.Core_Logic.Fractions;
+import calculator.misc.Errors;
 import calculator.misc.Rudeness;
 
 public class Addition {

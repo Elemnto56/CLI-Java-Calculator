@@ -5,7 +5,7 @@ import calculator.Four_Function.*;
 import calculator.misc.Errors;
 
 public class Main {
-    public static void main(String[] args) throws Errors.FatalMainException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hello! Welcome to Calculator! Type a number for an operation below: ");
         System.out.println("""
@@ -35,8 +35,7 @@ public class Main {
 
             } catch (Exception e) {
                 sc.nextLine();
-                throw new Errors.FatalMainException("The current file could not operate as supposed to");
-                // System.out.println("Input a number, not a letter or whatever that was");      
+                System.out.println("Input a number, not a letter or whatever that was");      
             }
         }
             sc.close();
