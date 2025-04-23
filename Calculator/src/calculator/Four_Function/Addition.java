@@ -16,7 +16,15 @@ public class Addition {
 
         if (userFrac.equalsIgnoreCase("y")) {
             Fractions.FracAddition();
-            System.exit(0);
+
+            System.out.print("Return to Menu? (y/n)>");
+        String userMenu = sc.nextLine();
+
+        if (userMenu.equalsIgnoreCase("y")) {
+            Main.main(args);
+        } if (userMenu.equalsIgnoreCase("n")) {
+            System.out.println("Goodbye!");
+        }
         } if (userFrac.equalsIgnoreCase("n")) {
             System.out.println("Continuing on with standard additon...");
         }

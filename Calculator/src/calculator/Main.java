@@ -34,7 +34,8 @@ public class Main {
 
             } catch (Exception e) {
                 sc.nextLine();
-                System.out.println("Input a number, not a letter or whatever that was");      
+                
+                // System.out.println("Input a number, not a letter or whatever that was");      
             }
         }
             sc.close();
