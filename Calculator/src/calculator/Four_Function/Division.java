@@ -3,6 +3,7 @@ import java.util.Scanner;
 import org.apache.commons.math3.fraction.Fraction;
 
 import calculator.Main;
+import calculator.Core_Logic.Fractions;
 import calculator.misc.Rudeness;
 
 public class Division {
@@ -10,6 +11,20 @@ public class Division {
         Rudeness insult = new Rudeness();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to division!");
+
+        // Fraction check
+        System.out.println("Would you like add fractions? (y/n)");
+        String userFrac = sc.nextLine();
+
+        if (userFrac.equalsIgnoreCase("y")) {
+            Fractions.Fraction(sc);
+            Fractions.Fraction(sc);
+
+            
+            System.exit(0);
+        } if (userFrac.equalsIgnoreCase("n")) {
+            System.out.println("Continuing on with standard divison...");
+        }
 
         int userOne = 0;
         int userTwo = 0;

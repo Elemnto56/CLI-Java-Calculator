@@ -10,8 +10,10 @@ public class Main {
         System.out.println("""
                 1. Addition
                 2. Subtraction
-                3. 
-                """;);
+                3. Multiplication
+                4. Division
+                5. Scientifc [BETA!] (powers, sqrt, log, etc)
+                """);
         
         boolean validInput = false;
 
@@ -25,6 +27,7 @@ public class Main {
                     case 3 -> Multiplication.main(args);
                     case 4 -> Division.main(args);
                     case 5 -> Scientific.main(args);
+                    case 6 -> System.exit(0);
                     default -> System.out.println("Invalid input");
                 }
 
