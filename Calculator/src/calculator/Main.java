@@ -2,8 +2,8 @@ package calculator;
 import java.util.Scanner;
 import calculator.Core_Logic.*;
 import calculator.Four_Function.*;
-import calculator.misc.Errors.FatalMainException;
-import calculator.misc.Errors.NotANumberException;
+import calculator.misc.*;
+import calculator.misc.Errors.*;
 
 public class Main {
     public static void main(String[] args) throws FatalMainException {
@@ -15,6 +15,7 @@ public class Main {
                 3. Multiplication
                 4. Division
                 5. Advanced Mathematics [Graph and Scientific Operations]
+                6. The Distillery! (Source Code)
                 7. Quit
                 """);
         
@@ -30,7 +31,7 @@ public class Main {
                     case 3 -> Multiplication.main(args);
                     case 4 -> Division.main(args);
                     case 5 -> Main.AdvancedSubMenu(args);
-                    case 6 -> 
+                    case 6 -> Dev_Room.main(args);
                     case 7 -> System.exit(0);
                     default -> System.out.println("Invalid input");
                 }

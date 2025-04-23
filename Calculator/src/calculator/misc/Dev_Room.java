@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Dev_Room {
     public static void main(String[] args) {
-        FileReader fr = new FileReader(null)
         Scanner sc = new Scanner(System.in);
         System.out.println("""
                 Welcome to the Dev Room! Or, as the dev class it: "The Distillery"!
@@ -21,9 +20,13 @@ public class Dev_Room {
         int userInput = sc.nextInt();
         switch (userInput) {
             case 1 -> printFile("calculator/Four_Function/Addition.java");
+            case 2 -> printFile("calculator/Four_Function/Subtraction.java");
+            case 3 -> printFile("calculator/Four_Function/Multiplication.java");
+            case 4 -> printFile("calculator/Four_Function/Division.java");
+            default -> System.out.println("An error occured");
         }
     }
-    /* 
+    
     public static void printFile(String fileName) {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
@@ -34,5 +37,5 @@ public class Dev_Room {
             System.out.println("Oops! Could not read " + fileName);
         }
     }
-    */
+
 }
