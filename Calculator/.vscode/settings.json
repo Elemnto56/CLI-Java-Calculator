@@ -15,7 +15,7 @@
     "java.configuration.runtimes": [
     {
         "name": "JavaSE-21",
-        "path": "/usr/local/sdkman/candidates/java/21.0.6-ms",
+        "path": "/home/pi/.sdkman/candidates/java/21.0.6-tem",
         "default": true
     }
 ],
