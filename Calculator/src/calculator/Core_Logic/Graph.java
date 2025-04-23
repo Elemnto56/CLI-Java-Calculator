@@ -8,8 +8,10 @@ public class Graph {
     static String expr;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Input expression: ");
-        expr = sc.nextLine();
+        System.out.print("Type your equation in terms of x (like x^2 - 4): ");
+        String input = sc.nextLine();
+        Graph.generateGraph(input);
+        sc.close();
     }
 
     public static void generateGraph(String expr) {

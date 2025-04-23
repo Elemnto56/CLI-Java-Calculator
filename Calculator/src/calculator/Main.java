@@ -14,7 +14,7 @@ public class Main {
                 2. Subtraction
                 3. Multiplication
                 4. Division
-                5. Advanced Mathematics [Gra]
+                5. Advanced Mathematics [Graph and Scientific Operations]
                 7. Quit
                 """);
         
@@ -29,7 +29,7 @@ public class Main {
                     case 2 -> Subtraction.main(args);
                     case 3 -> Multiplication.main(args);
                     case 4 -> Division.main(args);
-                    case 5 -> Scientific.main(args);
+                    case 5 -> Main.AdvancedSubMenu(args);
                     case 7 -> System.exit(0);
                     default -> System.out.println("Invalid input");
                 }
