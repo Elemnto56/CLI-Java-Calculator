@@ -23,10 +23,10 @@ public class Dev_Room {
 
         int userInput = sc.nextInt();
         switch (userInput) {
-            case 1 -> printFile("/home/pi/my-code-project/Calculator/src/calculator/Four_Function/Addition.java");
-            case 2 -> printFile("/home/pi/my-code-project/Calculator/src/calculator/Four_Function/Subtraction.java");
-            case 3 -> printFile("/home/pi/my-code-project/Calculator/src/calculator/Four_Function/Multiplication.java");
-            case 4 -> printFile("/home/pi/my-code-project/Calculator/src/calculator/Four_Function/Division.java");
+            case 1 -> printFile("Calculator/src/calculator/Four_Function/Addition.java");
+            case 2 -> printFile("Calculator/src/calculator/Four_Function/Subtraction.java");
+            case 3 -> printFile("Calculator/src/calculator/Four_Function/Multiplication.java");
+            case 4 -> printFile("Calculator/src/calculator/Four_Function/Division.java");
             case 5 -> Main.main(args);
             default -> System.out.println("An error occured");
         }

@@ -42,7 +42,8 @@ public class Main {
                 // System.out.println("Input a number, not a letter or whatever that was");      
             }
         }
-            sc.close();
+        
+        sc.close();
     }
 
     @SuppressWarnings("resource")

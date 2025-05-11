@@ -16,7 +16,10 @@ public class Addition {
         String userFrac = sc.nextLine();
 
         if (userFrac.equalsIgnoreCase("y")) {
-            Fractions.FracAddition();
+            var frac = Fractions.Fraction(sc);
+            var frac2 = Fractions.Fraction(sc);
+
+            System.out.println("Answer: " +frac.add(frac2));
 
             System.out.print("Return to Menu? (y/n)>");
         String userMenu = sc.nextLine();
