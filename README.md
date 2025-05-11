@@ -1,13 +1,13 @@
 # Java Terminal Calculator
 
-This is a Java-powered calculator that runs in your terminal. It covers the basics like addition, subtraction, multiplication, and division — plus more advanced stuff like fractions, scientific functions (square roots, powers, logs), graphing, and even a little dev-mode to peek into the source code behind everything.
+This is a Java-powered calculator that runs in your terminal. It covers the basics like addition, subtraction, multiplication, and division plus more advanced stuff like fractions, scientific functions (square roots, powers, logs), graphing, and even a little dev-mode to peek into the source code behind everything.
 
 ### Features
 - Basic operations (add, subtract, multiply, divide)
 - Fraction support (enter values like `5/6`, and it'll handle it)
 - Scientific functions like powers, square roots, logarithms, and more
 - ASCII-based graphing calculator
-- A dev menu called **The Distillery** — where you can read the `.java` files that make the calculator work
+- A dev menu called **The Distillery** where you can read the `.java` files that make the calculator work
 
 ---
 
@@ -36,7 +36,7 @@ The calculator will launch in your terminal. Just type a number to select a menu
 
 ## The Distillery
 
-Option 6 in the main menu opens up a list of .java files you can read inside the program. It shows how the calculator works under the hood — like a walkthrough of the source code.
+Option 6 in the main menu opens up a list of .java files you can read inside the program. It shows how the calculator works under the hood like a walkthrough of the source code.
 
 ----Notes----
 
@@ -46,9 +46,6 @@ Terminal support for colors or symbols isn’t required, just nice to have.
 Built With
 
 Java 21
-No frameworks
-Just structured Java files, some logic, and questionable variable names
-License
 
 Free to use, study, or modify.
 Credit is appreciated, but not required.
